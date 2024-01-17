@@ -48,15 +48,19 @@ body{
 
 .side-bar {
   width: 20%;
+  
 
-  padding: 10px 40px;
+}
+.side-bar div{
+    padding: 0px 20px 10px;
 }
 .side-bar span {
   padding: 10px;
   cursor: pointer;
 }
-.side-bar div:hover {
+.side-bar div div:hover {
   background-color: rgb(234, 229, 229);
+
 }
 
 .img-float {
@@ -71,12 +75,14 @@ body{
   margin: 5px auto;
 }
 .content {
-  /* width: 80%; */
+  width: 100%;
   border-top: 1px solid rgb(219, 215, 215);
   padding: 10px;
   box-sizing: border-box;
   background-color: #f0f0f0c6;
   padding: 0 30px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 80vh; /* Set a fixed height for scrolling */
 }
 .divider {
   border-top: 1px solid rgb(219, 215, 215);
